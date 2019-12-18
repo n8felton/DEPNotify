@@ -697,6 +697,7 @@ class ViewController: NSViewController, WKNavigationDelegate, NSApplicationDeleg
 class WindowController: NSWindowController {
     
     override func windowDidLoad() {
+        self.window?.canBecomeVisibleWithoutLogin = true
         
         if CommandLine.arguments.contains("-fullScreen") {
             
